@@ -1,0 +1,38 @@
+.home-page {
+  padding-top: 1rem;
+}
+
+.home-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  max-width: 400px;
+}
+.home-search-icon {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+.home-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.25rem 0;
+}
+.home-search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.bot-card-wrap {
+  min-width: 280px;
+  flex-shrink: 0;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}

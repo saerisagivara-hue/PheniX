@@ -1,0 +1,131 @@
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.chat-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.chat-back {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.chat-back:hover {
+  color: var(--accent);
+}
+.chat-header-bot {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+.chat-header-avatar {
+  flex-shrink: 0;
+}
+.chat-header-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.chat-header-author {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.chat-header-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  width: 100%;
+}
+.chat-like {
+  background: none;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.chat-intro {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.chat-intro-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 1rem 0;
+  overflow-y: auto;
+  min-height: 200px;
+}
+
+.chat-bubble {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+.chat-bubble--user {
+  flex-direction: row-reverse;
+}
+.chat-bubble--user .chat-bubble-content {
+  background: var(--accent);
+  color: white;
+  border-radius: 16px 16px 4px 16px;
+}
+.chat-bubble-content {
+  max-width: 85%;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px 16px 16px 4px;
+}
+.chat-bubble-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.chat-bubble-name {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+.chat-bubble-avatar {
+  flex-shrink: 0;
+}
+
+.chat-form {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+.chat-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+}
+.chat-send {
+  flex-shrink: 0;
+  padding: 0.75rem 1.25rem;
+}
+
+.chat-disclaimer {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
