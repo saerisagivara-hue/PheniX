@@ -6,4 +6,5 @@ frontend/.env
 backend/phoenix.db
 backend/data.json
 dist/
+build/
 *.log
